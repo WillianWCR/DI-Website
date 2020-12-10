@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#EF476F" />
+    <title>Animal - dotpet.</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac7344cbc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+         <div class="header">
+    <div class="logo">
+        <a href="./index.html"><img src="./img/logo-color.png" alt="Logo dotpet"></a>
+    </div>
+    <div class="desktop-menu">
+        <ul class="nav">
+            <li class="nav-item ">
+                <a href="./index.html">Início</a>
+            </li>
+                                    <li class="nav-item ">
+                <a href="#">Meus animais</a>
+            </li>
+                        <li class="nav-item active">
+                <a href="#">Animais para adoção</a>
+            </li>
+            <li class="nav-item ">
+                <a href="#">Instituições</a>
+            </li>
+            <li class="nav-item ">
+                <a href="#">Contato</a>
+            </li>
+        </ul>
+    </div>
+            <div class="logged-user">
+            <div class="details">
+                <span class="name">Willian Rodrigues</span>
+                <span class="type">
+                                                Pessoa física
+                                            </span>
+            </div>
+            <div class="image"> 
+                <img class="profile-picture" src="./img/human.jpg">
+            </div>
+        </div>
+        <div class="actions">
+            <button class="btn btn-options" onclick="toggleMenu('user-dropdown-menu');"><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown" id="user-dropdown-menu">
+                <ul class="menu-dropdown">
+                    <a href="#">
+                        <li class="menu-dropdown-item">
+                            👤 Minha conta
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="menu-dropdown-item">
+                            🔧 Suporte
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="menu-dropdown-item">
+                            🚪 Finalizar sessão
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+<script>
+    let toggleMenu = (id) => {
+        var x = document.getElementById(id);
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script> 
+    <div class="content">
+            <div class="row animal">
+        <div class="col-4">
+            <h2 class="title">Informações</h2>
+            <div class="card align-center">
+                <div class="cover" style="background-image: url('./img/no-photo.png')">
+                </div>
+                <div class="profile-picture">
+                    <img src="./img/animal.jpg">
+                </div>
+                <div class="detail">
+                    <h1 class="title">🐶 Toby <span class="badge secondary">Disponível</span></h1>
+                    <span class="info">Vira-lata | 3 anos | ♀️ Fêmea</span>
+                </div>
+                <div class="short-bio">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae imperdiet ipsum. Cras non velit eros. Nunc blandit lorem in est condimentum, eget maximus lorem pulvinar. Etiam ultricies diam at elit molestie auctor.
+                </div>
+                <button class="btn btn-block btn-large btn-secondary action">Compartilhar</button>
+                <button class="btn btn-block btn-large btn-primary action">Adotar</button>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-7">
+                    <h2 class="title">Biografia</h2>
+                    <div class="card">
+                        <p class="biografia">A pretinha é uma cachorrinha muito dócil. Ela tem 3 anos de idade, é muito brincalhona. Atualmente, está com as vacinas em dia. Deixo para adoção, porque infelizmente eu não posso dar mais conta de cuidar dela visto que a minha família aumentou bastante, gerando muitos custos para meu lar.</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <h2 class="title">Doador</h2>
+                    <div class="card">
+                        <div class="owner">
+                            <div class="image">
+                                <img src="./img/no-photo.png">
+                            </div>
+                            <div class="details">
+                                <span class="name">Willian Rodrigues</span>
+                                <span class="info">19 anos | Manaus/AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Galeria</h2>
+                    <div class="card">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+     <div class="footer">
+    <div class="left">
+        <span>Feito com 💗 por Equipe dotpet.</span>
+    </div>
+    <div class="right">
+        Build 1.0.0 | Version 1.0.0
+    </div>
+</div> 
+    <script src="./js/script.js"></script>
+</body>
+</html>

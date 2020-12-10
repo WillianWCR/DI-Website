@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#EF476F" />
+    <title>Início - dotpet.</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac7344cbc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+         <div class="header">
+    <div class="logo">
+        <a href="./index.html"><img src="./img/logo-color.png" alt="Logo dotpet"></a>
+    </div>
+    <div class="desktop-menu">
+        <ul class="nav">
+            <li class="nav-item active">
+                <a href="./index.html">Início</a>
+            </li>
+                        <li class="nav-item ">
+                <a href="#">Sobre</a>
+            </li>
+                                    <li class="nav-item ">
+                <a href="#">Animais para adoção</a>
+            </li>
+            <li class="nav-item ">
+                <a href="#">Instituições</a>
+            </li>
+            <li class="nav-item ">
+                <a href="#">Contato</a>
+            </li>
+        </ul>
+    </div>
+    
+            <div class="actions">
+            <button onclick="window.location.href = './register.html'" class="btn btn-primary btn-sm">Registre-se</button>
+            <button onclick="window.location.href = './login.html'" class="btn btn-secondary btn-sm">Login</button>
+        </div>
+    </div>
+
+<script>
+    let toggleMenu = (id) => {
+        var x = document.getElementById(id);
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script> 
+    <div class="content">
+            <div class="home row">
+        <div class="herobanner col-7">
+            <h1>Adotar é amar em dobro 💗🐾</h1>
+            <div class="form-input form-input-icon input-secondary">
+                <div class="form-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="email" class="form-input" name="email" placeholder="Pesquise por bairro, raça, porte, etc.">
+                <button class="btn btn-primary"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="image col-5" style="background-image: url(./img/pulgas.jpg)">
+        </div>
+    </div>
+    </div>
+     <div class="footer">
+    <div class="left">
+        <span>Feito com 💗 por Equipe dotpet.</span>
+    </div>
+    <div class="right">
+        Build 1.0.0 | Version 1.0.0
+    </div>
+</div> 
+    <script src="./js/script.js"></script>
+</body>
+</html>

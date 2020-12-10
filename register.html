@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#EF476F" />
+    <title>Cadastro - dotpet.</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac7344cbc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container row">
+    <div class="sidebar col-7" style="background-image: url('./img/background-image.jpeg')">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo-white.png" alt="Logo dotpet White"></a>
+        </div>
+        <div class="footer-login">
+            <span>Feito com 💗 por Equipe dotpet.</span>
+        </div>
+    </div>
+    <div class="content login col-5">
+        <div class="logo">
+            <img src="./img/logo-color.png" alt="Logo dotpet">
+        </div>
+        <form class="login-form" action="#" method="POST">
+    <div class="title">
+        👤 Registre-se
+    </div>
+        <div class="form-input-icon">
+        <i class="fas fa-user form-icon"></i>
+        <input type="text" class="form-input" name="name" placeholder="Nome completo" required>
+    </div>
+    <div class="form-input-icon">
+        <i class="fas fa-envelope form-icon"></i>
+        <input type="email" class="form-input" name="email" placeholder="E-mail" required>
+    </div>
+    <div class="form-input-icon">
+        <i class="fas fa-birthday-cake form-icon"></i>
+        <input type="text" class="form-input" name="birthday" placeholder="Data de nascimento" onfocus="(this.type='date')" required>
+    </div>
+    <div class="form-input-icon">
+        <i class="fas fa-key form-icon"></i>
+        <input type="password" class="form-input" name="password" placeholder="Senha" required>
+    </div>
+    <div class="form-input-icon">
+        <i class="fas fa-key form-icon"></i>
+        <input type="password" class="form-input" name="confirm-password" placeholder="Confirme sua senha" required>
+    </div>
+    <div class="form-button">
+        <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = './dashboard.html'">Cadastrar</button>
+    </div>
+    <div class="form-detail">
+        Não é uma pessoa física? <a href="#">Cadastrar instituição</a>
+    </div>
+</form>
+        <div class="footer-login">
+                <span>Já tem cadastro? <a href="./login.html">Entre aqui</a></span>
+        </div>
+    </div>
+</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
